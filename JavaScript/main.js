@@ -9,14 +9,15 @@
 //});
 
 $('#pro-pic img').hover(
-    function(){
-        $('#pro-pic').html("<img class= 'mx-auto' src='img/bear_1.jpg'>").delay(100);
-        $('.pro-text').html("<h1>Welcome</h1> <h4>Please Explore!</h4>");
+    function () {
+        $(this).attr("src", "img/bear_1.jpg");
+        $('.pro-text').html("<h1 class= 'pt-2'>Welcome</h1> <h4>Please Explore!</h4>");
         $('#pro-btn').fadeIn(100);
     },
-    function(){
-        $('#pro-pic').html("<img class= 'mx-auto' src='img/bear_2.jpg'>").delay(100);
-        $('.pro-text').html("<h1>Matt Basile</h1> <h4>Junior Front End Developer</h4>");
+    function () {
+        $(this).attr("src", "img/bear_2.jpg");
+
+        $('.pro-text').html("<h1 class= 'pt-2'>Matt Basile</h1> <h4>Junior Front End Developer</h4>");
 });
 
 //$('#pro-pic').hover(
@@ -27,3 +28,6 @@ $('#pro-pic img').hover(
 //        $('.pro-text').html("<h1>Matt Basile</h1>
 //            <h4>Junior Front End Developer</h4>"); 
 //});
+
+
+//ANIMISTION 
