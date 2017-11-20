@@ -1,0 +1,15 @@
+#pro-btn{
+    display:none;
+}
+
+@media only screen and (max-width: 40em) { 
+    #pro-btn{
+       margin: auto;
+    }
+}
+
+@media only screen and (min-width: 64.063em) { 
+    #pro-btn{
+      float:right;
+    }
+}
