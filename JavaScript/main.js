@@ -50,3 +50,4 @@ var myLineChart = new Chart(ctxD, {
         responsive: true
     }    
 });
+
