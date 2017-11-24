@@ -35,7 +35,7 @@ $grid.on( 'click', '.grid-item', function() {
   // change size of item via class
   $( this ).toggleClass('grid-item--gigante');
     $(this).siblings().toggleClass("no-tile");
-    $('d-none').addClass("show");
+    $(".display-none").toggleClass('tile-text');
     
   // trigger layout
   $grid.masonry();
@@ -49,9 +49,11 @@ $grid.on( 'layoutComplete', function( event, laidOutItems ) {
 
 $grid.on('click', '.fe-tile', ( function () {
         $('.current-image').attr("src", "img/bear_1.jpg");
+        
     }));
 $grid.on('click', '.fx-tile', ( function () {
         $('.current-image').attr("src", "img/Grizzle-kun.png");
+     $(".d-none").toggleClass('.tile-text');
     }));
 $grid.on('click', '.wo-tile', ( function () {
         $('.current-image').attr("src", "img/Ice_bear.png");
@@ -71,5 +73,5 @@ $grid.on('click', '.dog-tile', ( function () {
 $grid.on('click', '.st-tile', ( function () {
         $('.current-image').attr("src", "img/Pand-kun.png");
     }));
-
-
+//
+//if(onclick === even)
