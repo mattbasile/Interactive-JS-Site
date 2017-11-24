@@ -1,13 +1,4 @@
-//
-//
-//$('.a')
-// .mouseover(function(){
-//    $(this).html()toggle(1000);
-//}) 
-// .mouseout(function(){
-//    $(this).toggle(500);
-//});
-
+//HOME PAGE
 $('#pro-pic img').hover(
     function () {
         $(this).attr("src", "img/bear_1.jpg");
@@ -16,40 +7,13 @@ $('#pro-pic img').hover(
     },
     function () {
         $(this).attr("src", "img/bear_2.jpg");
-
         $('.pro-text').html("<h1 class= 'pt-2'>Matt Basile</h1> <h4>Junior Front End Developer</h4>");
 });
 
-//$('#pro-pic').hover(
-//    function(){
-//        $('.pro-text').html("<h1>Welcome!</h1>");
-//    },
-//    function(){
-//        $('.pro-text').html("<h1>Matt Basile</h1>
-//            <h4>Junior Front End Developer</h4>"); 
-//});
 
 
 //ANIMISTION 
 
-////Chart
-//var ctxD = document.getElementById("doughnutChart").getContext('2d');
-//var myLineChart = new Chart(ctxD, {
-//    type: 'doughnut',
-//    data: {
-//        labels: ["FX Research", "Front End Development", "Working Out", "Reading", "Self Torture", "Fantasy Football"],
-//        datasets: [
-//            {
-//                data: [30, 30, 15, 15, 5, 5],
-//                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "purple"],
-//                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774", "green"]
-//            }
-//        ]
-//    },
-//    options: {
-//        responsive: true
-//    }    
-//});
 
 //Grid
 $('.grid').masonry({
@@ -70,12 +34,42 @@ var $grid = $('.grid').masonry({
 $grid.on( 'click', '.grid-item', function() {
   // change size of item via class
   $( this ).toggleClass('grid-item--gigante');
+    $(this).siblings().toggleClass("no-tile");
+    $('d-none').addClass("show");
+    
   // trigger layout
   $grid.masonry();
-    
+ 
 });
 
 $grid.on( 'layoutComplete', function( event, laidOutItems ) {
   console.log( 'Masonry layout complete with ' + laidOutItems.length + ' items' );
      
 });
+
+$grid.on('click', '.fe-tile', ( function () {
+        $('.current-image').attr("src", "img/bear_1.jpg");
+    }));
+$grid.on('click', '.fx-tile', ( function () {
+        $('.current-image').attr("src", "img/Grizzle-kun.png");
+    }));
+$grid.on('click', '.wo-tile', ( function () {
+        $('.current-image').attr("src", "img/Ice_bear.png");
+    }));
+$grid.on('click', '.ff-tile', ( function () {
+        $('.current-image').attr("src", "img/bear_2.jpg");
+    }));
+$grid.on('click', '.read-tile', ( function () {
+        $('.current-image').attr("src", "img/GRIZZLY_GOD.png");
+    }));
+$grid.on('click', '.soc-tile', ( function () {
+        $('.current-image').attr("src", "img/Ice_bear.png");
+    }));
+$grid.on('click', '.dog-tile', ( function () {
+        $('.current-image').attr("src", "img/panda_1.jpg");
+    }));
+$grid.on('click', '.st-tile', ( function () {
+        $('.current-image').attr("src", "img/Pand-kun.png");
+    }));
+
+
