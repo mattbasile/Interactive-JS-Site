@@ -1,9 +1,11 @@
 const pieData = [
   {name: 'Front End', value: 40, color: '#18FFFF'},
-  {name: 'Paused', value: 26, color: '#0288D1'},
-  {name: 'Stopped', value: 7, color: '#BF360C'},
-  {name: 'Failed', value: 13, color: '#F4511E'},
-  {name: 'Unknown', value: 19, color: '#F9A825'},
+  {name: 'FX Research', value: 26, color: '#0288D1'},
+  {name: 'Exercise', value: 7, color: '#BF360C'},
+  {name: 'Reading', value: 13, color: '#F4511E'},
+  {name: 'Fantasy Football', value: 19, color: '#F9A825'},
+    {name: 'Fantasy Football', value: 19, color: '#F9A825'},
+    {name: 'Fantasy Football', value: 19, color: '#F9A825'},
 ];
 bakeDonut(pieData);
 
