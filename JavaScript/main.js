@@ -1,16 +1,28 @@
 //HOME PAGE
-$('#pro-pic img').hover(
-    function () {
-        $(this).attr("src", "img/bear_1.jpg");
-        $('.pro-text').html("<h1 class= 'pt-2'>Welcome</h1> <h4>Please Explore!</h4>");
-        $('#pro-btn').fadeIn(100);
+var navLinks = {
+    home: {
+        img: '/img/bear_1.jpg',
+        content:'Come on Home!' 
     },
-    function () {
-        $(this).attr("src", "img/bear_2.jpg");
-        $('.pro-text').html("<h1 class= 'pt-2'>Matt Basile</h1> <h4>Junior Front End Developer</h4>");
-});
+    career: {
+        img: '/img/GRIZZLY_GOD.png',
+        content: "I'm a great Employee!"
+    }
+}; 
 
-
+$('.nav-link').hover(
+     function(){
+        var key = $(this).text().toLowerCase();
+        var link = navLinks[key];
+        console.log(key);
+        $('#pro-pic img').attr('src', link.img);
+        $('#js-nav-text').text(link.content);
+     },
+     function(){
+         $('#pro-pic img').attr('src', '/img/bear_2.jpg');
+         $('#js-nav-text').text('Junior Front End Developer');
+     }
+);
 
 //ANIMISTION 
 
