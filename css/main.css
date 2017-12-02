@@ -1,3 +1,7 @@
+body{
+    background: white;
+}
+
 #pro-btn{
     display:none;
 }
@@ -14,12 +18,244 @@
     }
 }
 
-/* Donut charts get built from Pie charts but with a fundamentally difference in the drawing approach. The donut is drawn using arc strokes for maximum freedom in styling */
-.ct-series-a .ct-slice-donut {
-  /* give the donut slice a custom colour */
-  stroke: blue;
-  /* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute */
-  stroke-width: 5px !important;
-  /* create modern looking rounded donut charts */
-  stroke-linecap: round;
+/*CURRENT HTML DESIGN*/
+/*GRID*/
+.no-tile{
+    display:none;
+}
+.show{
+    display: block;
+}
+
+
+.grid-item--gigante{
+ width: 100%;
+ height: 300px;
+ margin: auto;
+padding: 0;
+}
+
+.display-none{
+    display:none; 
+}
+.tile-text{
+    font-size: .9em;
+    display: block;
+    text-align: center;
+    
+}
+
+/*Chart*/
+
+
+
+.pie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(0 2px 0px #333);
+          filter: drop-shadow(0 2px 0px #333);
+}
+
+.data-path:hover {
+  cursor: pointer;
+}
+
+.data-text {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  fill: #fff;
+}
+.data-text__value {
+  font-size: 7rem;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  opacity: 0;
+}
+.data-text__name {
+  font-size: 2rem;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+  opacity: 0;
+}
+.data-text--show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fadeGraphTextIn 0.5s forwards;
+          animation: fadeGraphTextIn 0.5s forwards;
+}
+.data-text:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.legend-text {
+  fill: #fff;
+}
+
+@-webkit-keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.
+
+.pie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(0 2px 0px #333);
+          filter: drop-shadow(0 2px 0px #333);
+}
+
+.data-path:hover {
+  cursor: pointer;
+}
+
+.data-text {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  fill: #fff;
+}
+.data-text__value {
+  font-size: 7rem;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  opacity: 0;
+}
+.data-text__name {
+  font-size: 2rem;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+  opacity: 0;
+}
+.data-text--show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fadeGraphTextIn 0.5s forwards;
+          animation: fadeGraphTextIn 0.5s forwards;
+}
+.data-text:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.legend-text {
+  fill: #fff;
+}
+
+@-webkit-keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.pie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(0 2px 0px #333);
+          filter: drop-shadow(0 2px 0px #333);
+}
+
+.data-path:hover {
+  cursor: pointer;
+}
+
+.data-text {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  fill: #fff;
+}
+.data-text__value {
+  font-size: 7rem;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  opacity: 0;
+}
+.data-text__name {
+  font-size: 2rem;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+  opacity: 0;
+}
+.data-text--show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fadeGraphTextIn 0.5s forwards;
+          animation: fadeGraphTextIn 0.5s forwards;
+}
+.data-text:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.legend-text {
+  fill: #fff;
+}
+
+@-webkit-keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chart-bg{
+    background: blue;
 }
