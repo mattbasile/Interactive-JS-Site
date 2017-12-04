@@ -7,6 +7,18 @@ var navLinks = {
     career: {
         img: '/img/GRIZZLY_GOD.png',
         content: "I'm a great Employee!"
+    },
+    portfolio: {
+        img: '/img/Bearstack.png',
+        content: "Check out my work!"
+    },
+    interests: {
+        img: '/img/panda_1.jpg',
+        content: "Do we like the same things?"
+    },
+    contact: {
+        img: '/img/Pand-kun.png',
+        content: "Call me beep me, if you want to Reach me!"
     }
 }; 
 
@@ -223,3 +235,5 @@ function wrap(text, width) {
     }
   });
 }
+
+
