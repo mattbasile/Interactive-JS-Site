@@ -190,6 +190,14 @@ var interestsContent = {
      $('#interests-text').text(link.p);
      $("<button type='button' id='exit' class='btn btn-danger mx-auto d-block my-5'>Exit</button>").appendTo("body");
      $('#exit').click(function(){
-         window.location="/interest.html";     });     
+    window.location="/interest.html"; 
+     $(document).ready().fadeIn('.click-icon');
+     $(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#middle').offset().top
+    }, 'slow');
+});
+     });     
     
  });
