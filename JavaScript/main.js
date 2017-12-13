@@ -190,6 +190,47 @@ var interestsContent = {
      $('#interests-text').text(link.p);
      $("<button type='button' id='exit' class='btn btn-danger mx-auto d-block my-5'>Exit</button>").appendTo("body");
      $('#exit').click(function(){
-         window.location="/interest.html";     });     
+    window.location="/interest.html"; 
+     $(document).ready().fadeIn('.click-icon');
+     $(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#middle').offset().top
+    }, 'slow');
+});
+     });     
     
  });
+
+//Portfolio
+var portfolioContent ={
+    
+    social: {
+        img: '/img/bear_1.jpg',
+        h1: 'My work at the NBA',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    },
+    proVideo:{
+        img: '/img/bear_1.jpg',
+        h1: 'My work with Video',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    },
+    webWork:{
+        img: '/img/bear_1.jpg',
+        h1: 'My work with Web Design',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    }
+};
+
+$('.see-more-btn').on('click',          
+    function(){
+    var key = this.id;
+    var link = portfolioContent[key];
+     console.log(link); 
+    $(".card").animate({right: '700px'});
+//    $(".card-deck").toggleClass('d-none');
+//    $("<h1 id='portfolio-header' class='col mx-2'></h1>").appendTo("body");
+//    $('#portfolio-header').text(link.h1);
+    $(".hidden-image").toggleClass('d-none');
+    $(".hidden-image img").attr('src', link.img);
+})
