@@ -201,3 +201,36 @@ var interestsContent = {
      });     
     
  });
+
+//Portfolio
+var portfolioContent ={
+    
+    social: {
+        img: '/img/bear_1.jpg',
+        h1: 'My work at the NBA',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    },
+    proVideo:{
+        img: '/img/bear_1.jpg',
+        h1: 'My work with Video',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    },
+    webWork:{
+        img: '/img/bear_1.jpg',
+        h1: 'My work with Web Design',
+        p: 'While working for the NBA I was immersed in the creating of nightl Instagram and daily Musical.ly content. Using tools like Photoshop and Final Cut I produced high quality content for distribution daily.'
+    }
+};
+
+$('.see-more-btn').on('click',          
+    function(){
+    var key = this.id;
+    var link = portfolioContent[key];
+     console.log(link); 
+    $(".card").animate({right: '700px'});
+//    $(".card-deck").toggleClass('d-none');
+//    $("<h1 id='portfolio-header' class='col mx-2'></h1>").appendTo("body");
+//    $('#portfolio-header').text(link.h1);
+    $(".hidden-image").toggleClass('d-none');
+    $(".hidden-image img").attr('src', link.img);
+})
