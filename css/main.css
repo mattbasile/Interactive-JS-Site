@@ -495,3 +495,9 @@ footer{
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+
+/*Career*/
+.close{
+    color: red;
+    opacity: 1;
+}

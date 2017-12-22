@@ -210,3 +210,10 @@ $('.skillbar').each(function(){
 		width:$(this).attr('data-percent')
 	},6000);
 });
+
+//CAREER-MODALS
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
