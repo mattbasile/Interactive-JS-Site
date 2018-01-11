@@ -1,23 +1,23 @@
 //HOME PAGE
 var navLinks = {
     home: {
-        img: '/img/bear_1.jpg',
+        img: '/img/home-2.png',
         content:'Come on Home!' 
     },
     career: {
-        img: '/img/GRIZZLY_GOD.png',
+        img: '/img/career-2.png',
         content: "I'm a great Employee!"
     },
     about: {
-        img: '/img/Bearstack.png',
+        img: '/img/about-2.png',
         content: "Get to know me!"
     },
     interests: {
-        img: '/img/panda_1.jpg',
+        img: '/img/interests-2.png',
         content: "Do we like the same things?"
     },
     contact: {
-        img: '/img/Pand-kun.png',
+        img: '/img/contact-2.png',
         content: "Call me beep me, if you want to Reach me!"
     }
 }; 
@@ -31,7 +31,7 @@ $('.nav-link').hover(
         $('#js-nav-text').text(link.content);
      },
      function(){
-         $('#pro-pic img').attr('src', '/img/bear_2.jpg');
+         $('#pro-pic img').attr('src', link.img);
          $('#js-nav-text').text('Junior Front End Developer');
      }
 );
