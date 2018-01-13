@@ -2,23 +2,28 @@
 var navLinks = {
     home: {
         img: '/img/home-2.png',
-        content:'Come on Home!' 
+        content:'Come on Home!',
+        h4: '#FCD0A4'
     },
     career: {
         img: '/img/career-2.png',
-        content: "I'm a great Employee!"
+        content: "I'm a great Employee!",
+        h4: '#FCD0A4'
     },
     about: {
         img: '/img/about-2.png',
-        content: "Get to know me!"
+        content: "Get to know me!",
+        h4: '#FCD0A4'
     },
     interests: {
         img: '/img/interests-2.png',
-        content: "Do we like the same things?"
+        content: "Do we like the same things?",
+        h4: '#FCD0A4'
     },
     contact: {
         img: '/img/contact-2.png',
-        content: "Call me beep me, if you want to Reach me!"
+        content: "Call me beep me, if you want to Reach me!",
+        h4: '#FCD0A4'
     }
 }; 
 
@@ -33,6 +38,7 @@ $('.nav-link').hover(
      function(){
          $('#pro-pic img').attr('src', link.img);
          $('#js-nav-text').text('Junior Front End Developer');
+         $('#js-nav-text, h1').css('color', '#fff');
      }
 );
 
