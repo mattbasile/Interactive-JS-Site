@@ -1,50 +1,64 @@
 $('#quiz').quiz({
-  //resultsScreen: '#results-screen',
-  //counter: false,
+  resultsScreen: '#results-screen',
+  counter: true,
   homeButton: '#custom-home',
   counterFormat: 'Question %current of %total',
   questions: [
     {
-      'q': 'Is jQuery required for this plugin?',
+      'q': 'Which is not true?',
       'options': [
-        'Yes',
-        'No'
+        'I\'m both an older and younger brother',
+        'I have 10 cousins',
+        'My family has a reunion every 5 years', 
       ],
-      'correctIndex': 0,
+      'correctIndex': 2,
       'correctResponse': 'Good job, that was obvious.',
-      'incorrectResponse': 'Well, if you don\'t include it, your quiz won\'t work'
+      'incorrectResponse': 'Come on, that was the easy one!'
     },
     {
-      'q': 'How do you use it?',
+      'q': 'Which is not true?',
       'options': [
-        'Include jQuery, that\'s it!',
-        'Include jQuery and the plugin javascript.',
-        'Include jQuery, the plugin javascript, the optional plugin css, required markup, and the javascript configuration.'
+        'I was born in London',
+        'I\’ve been to all 7 continents',
+        'I\m a citizen of the United States'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Correct! I\'ve only been to 4!',
+      'incorrectResponse': 'Sorry lad, maybe next time!'
+    },
+    {
+      'q': 'Which is not true?',
+      'options': [
+        'I own a dog with a human\’s name',
+        'I shared a fish with my roommate in college named Andre (after Andre 3000)',
+        'I hate pets'
       ],
       'correctIndex': 2,
-      'correctResponse': 'Correct! Sounds more complicated than it really is.',
-      'incorrectResponse': 'Come on, it\'s not that easy!'
+      'correctResponse': 'Who hates pets?',
+      'incorrectResponse': 'I love to name my pets after people!'
     },
     {
-      'q': 'The plugin can be configured to require a perfect score.',
+      'q': 'Which is not true?',
       'options': [
-        'True',
-        'False'
+        'I can do 200 pushups in 3 minutes',
+        'I had 4 surgeries before the age of 18',
+        'I\’m nearly blind without my glasses or contacts'
+        
       ],
       'correctIndex': 0,
-      'correctResponse': 'You\'re a genius! You just set allowIncorrect to true.',
-      'incorrectResponse': 'Why you have no faith!? Just set allowIncorrect to true.'
+      'correctResponse': 'Maybe once upon a time...not any more',
+      'incorrectResponse': 'They keep getting harder huh?'
     },
-    {
-      'q': 'How do you specify the questions and answers?',
+        {
+      'q': 'Which is not true?',
       'options': [
-        'MySQL database',
-        'In the HTML',
-        'In the javascript configuration'
+        'My favorite food is Lobster',
+        ' I love coffee, but I think it’s bad for my teeth and stomach.',
+        'I used to eat ice cream everyday after school in middle school. '
       ],
-      'correctIndex': 2,
-      'correctResponse': 'Correct! Refer to the documentation for the structure.',
-      'incorrectResponse': 'Wrong! Do it in the javascript configuration. You might need to read the documentation.'
-    }
+      'correctIndex': 0,
+      'correctResponse': 'They\'re kind of just big bugs, right?',
+      'incorrectResponse': 'Close! But not really 😂 '
+    },
   ]
 });

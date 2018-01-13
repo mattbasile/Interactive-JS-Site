@@ -5,7 +5,6 @@
         <title>Matt Basile</title>
     <!--CSS -->
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css">
@@ -36,24 +35,30 @@
 <!--Left Column-->
 <div class="row py-5">
     <div class="col-6 text-center">
-    <img class= "mx-auto" src="img/bear_1.jpg">
+    <img class= "mx-auto" src="img/home-2.png">
    </div>
     <div class="col-6 text-center">
         <h1>Who is Matt Basile?</h1>
-        <p>Fun write up about who I am! With Links and stuff!</p>
+        <p class="mx-auto p-3">Hello there and welcome to my new website! I’m Matt, a frontend developer, who works in finance, that loves engaging websites and design. Please, explore my site and get a flavor of who I am as a person, designer and employee (I suggest hitting the buttons below for some real fun!). 
+Please don’t hesitate to reach out and chat! I’m always free to talk about design, code, sports or emerging markets! 
+Hope You Enjoy! :)
+</p>
         
-         <button type="button" class="btn btn-info mt-5" data-toggle="modal" data-target="#quizModal" id="myBtn">Learn More</button>
+         <button type="button" class="btn btn-info mt-5" data-toggle="modal" data-target="#quizModal" id="myBtn">Get to know me!</button>
+        
+        <button type="button" class="btn btn-info mt-5" data-toggle="modal"data-target="#goalsModal" id="myBtn">
+            Launch demo modal
+        </button>
   
        
     </div>
 </div>
-   <!--Modal Content  -->
+   <!--Modal Quiz Content  -->
             
 <div class="modal fade" id="quizModal" role="dialog">
     <div class="modal-dialog">
     
 <!-- Modal content-->
-<!-- RD Global  -->
 <div class="modal-content">
   <div class="modal-header">
     <button type="button" class="close m-0 p-0" data-dismiss="modal">&times;</button>
@@ -63,8 +68,8 @@
 -->
       <div id="quiz">
   <div id="quiz-header">
-    <h1>jQuery Quiz Plugin</h1>
-    <p class="faded">A quiz about the plugin built by the plugin.</p>
+    <h1>Two Truths and a Lie</h1>
+    <p class="faded">How well do you know Matt Basile?</p>
   </div>
  
 </div>
@@ -79,47 +84,62 @@
   </div>
  </div>
 </div>
-<!--
-   <h6>Can you spot the lie?</h6>
-    <div id="quiz" class="mt-2">
-      <h1 id="quiz-name"></h1>
-      <button id="submit-button">Submit Answers</button>
-      <button id="next-question-button">Next Question</button>
-      <button id="prev-question-button">Previous</button>
 
-      <div id="quiz-results">
-        <p id="quiz-results-message"></p>
-        <p id="quiz-results-score"></p>
+
+    
+ <!--Modal Goals Content  --> 
+    
+    <div class="modal fade" id="goalsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel">My Goals for 2018</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-unstyled">
+         <li> <i class="far text-dark fa-check-square"></i>
+            Launch Personal Site Reboot</li>
+            
+            <li><i class="far text-dark pr-1 fa-square"></i>Read a Book a Month</li>
+            <li><i class="far text-dark pr-1 fa-square"></i>Make 25 Episodes of "Oh Wait it Clicks"</li>
+            <li><i class="far text-dark pr-1 fa-square"></i>Learn Phyton for Work</li>
+            <li><i class="far text-dark pr-1 fa-square"></i>Finish my JavaScript Training</li>
+            <li><i class="far text-dark pr-1 fa-square"></i>Go to the Movies more often!</li>
+            
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-          
-    <div class="modal-footer">
-         
-    </div>
   </div>
- </div>
-</div> 
--->
+</div>
 <footer class="bg-danger text-muted text-center">
    <div class="mt-4">
         <a href="https://www.youtube.com/channel/UC7RtwzUYql3vse6oYeFMrBg/videos" target="_blank">
-           <i class="fa pr-3 fa-youtube" aria-hidden="true"></i>
+           <i class="fab fa-4x pr-2 text-white fa-youtube"></i>
         </a>
         <a href="https://github.com/mattbasile" target="_blank">
-           <i class="fa pr-3 fa-github" aria-hidden="true"></i>
+           <i class="fab fa-4x pr-2 text-white  fa-github"></i>
         </a>
         <a href="https://www.behance.net/matthewbas7159" target="_blank">
-            <i class="fa pr-3 fa-behance" aria-hidden="true"></i>  
+            <i class="fab fa-4x pr-2 text-white   fa-behance"></i>
         </a>
         <a href="https://www.linkedin.com/in/matthew-basile-070b279b/" target="_blank">
-            <i class="fa pr-3 fa-linkedin" aria-hidden="true"></i> 
+            <i class="fab fa-4x pr-2 text-white  fa-linkedin"></i>
         </a>
         <a href="https://angel.co/matthew-basile?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sidebar" target="_blank">
-            <i class="fa pr-3 fa-angellist" aria-hidden="true"></i>
+            <i class="fab fa-4x pr-2 text-white  fa-angellist"></i>
         </a>
     </div>
 </footer>   
 <!--JavaScript        -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+
 <script src="JavaScript/jquery-3.2.1.min.js"></script>
      <script src="JavaScript/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
